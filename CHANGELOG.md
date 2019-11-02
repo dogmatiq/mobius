@@ -9,6 +9,12 @@ The format is based on [Keep a Changelog], and this project adheres to
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 
+## [0.1.1] - 2019-11-02
+
+### Fixed
+
+- Ensure the ordering of members with the same weight is deterministic
+
 ## [0.1.0] - 2019-11-02
 
 - Initial release
