@@ -39,9 +39,9 @@ func (n *node) Remove(m *member) {
 
 // isHigherPriority returns true if a should be used in preference to b.
 func isHigherPriority(a, b *member) bool {
-	if a.Weight > b.Weight {
-		return true
+	if a.Weight == b.Weight {
+		return a.ID < b.ID
 	}
 
-	return a.ID < b.ID
+	return a.Weight > b.Weight
 }

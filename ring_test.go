@@ -42,6 +42,15 @@ var _ = Describe("type Ring", func() {
 			Expect(m).To(Equal("<member-2>"))
 		})
 
+		It("orders colliding members by weight regardless of the order they are added", func() {
+			ring.Add("<member-2>", []byte("<key>"), 2)
+			ring.Add("<member-1>", []byte("<key>"), 1)
+
+			m, ok := ring.Get([]byte("<key>"))
+			Expect(ok).To(BeTrue())
+			Expect(m).To(Equal("<member-2>"))
+		})
+
 		It("orders colliding members by ID, if they have the same weight", func() {
 			ring.Add("<member-2>", []byte("<key>"), 1)
 			ring.Add("<member-1>", []byte("<key>"), 1)
