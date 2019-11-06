@@ -17,8 +17,8 @@ const DefaultWeightMultiplier uint32 = 100
 // mappings when set membership is changed.
 type Ring struct {
 	// WeightMultiplier is the number that each member's weight is multiplied by
-	// to produce the number of vnodes to add for each member. If it zero
-	// DefaultWeightMultiplier is used.
+	// to produce the number of entries to add to the ring for each member.
+	// If it zero DefaultWeightMultiplier is used.
 	WeightMultiplier uint32
 
 	m       sync.RWMutex
