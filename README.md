@@ -10,4 +10,9 @@ algorithm for Go, designed to allocate work across a set of members of a cluster
 [![Build Status](https://img.shields.io/github/actions/workflow/status/dogmatiq/mobius/ci.yml?style=for-the-badge&branch=main)](https://github.com/dogmatiq/mobius/actions/workflows/ci.yml)
 [![Code Coverage](https://img.shields.io/codecov/c/github/dogmatiq/mobius/main.svg?style=for-the-badge)](https://codecov.io/github/dogmatiq/mobius)
 
+> **This project is deprecated.**
+>
+> This repository will be archived once it is no longer used by other Dogmatiq
+> projects.
+
 </div>
